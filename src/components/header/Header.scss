@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+    gap:50px;
+    padding: 20px;
+    font-size: 36px;
+    justify-content: flex-start
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    &:hover {
+        opacity: 0.2;
+        color: rgb(27, 27, 27);
+        transition: all 0.6s ease 0s;
+    }
+}
+
+.link--active {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.349);
+}

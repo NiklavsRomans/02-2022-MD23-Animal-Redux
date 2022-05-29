@@ -1,0 +1,57 @@
+.animal-form {
+    margin: 0 auto;
+}
+
+.animal-form {
+    display: flex;
+    justify-content: center;
+}
+
+.animal-head {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 22px;
+}
+
+.animal-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.add-btn {
+    padding: 18px 32px;
+    background-color: rgba(0, 0, 0, 0.281);
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    &:hover {
+        opacity: 0.7;
+        transition: all 0.6s ease 0s;
+    }
+}
+
+.animal-species-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.filter-btn {
+    padding: 13px 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(39, 39, 39, 0.808);
+    color: white;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+        transition: all 0.6s ease 0s;
+    }
+}

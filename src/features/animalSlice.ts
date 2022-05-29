@@ -1,25 +1,17 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-// interface AnimalState {
-//     value: Animal[]
-// }
-
 interface Animal {
     name: string
     specie: string
     imgSrc: string
 }
 const getInitialState = ():Animal[] => {
-  const savedTasks = localStorage.getItem('animals');
-  if (!savedTasks) {
+  const savedAnimals = localStorage.getItem('animals');
+  if (!savedAnimals) {
     return [];
   }
-  return JSON.parse(savedTasks);
+  return JSON.parse(savedAnimals);
 };
-
-// const initialState:AnimalState = {
-//   value: [],
-// };
 
 export const reservationsSlice = createSlice({
   name: 'animals',

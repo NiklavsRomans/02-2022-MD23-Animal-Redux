@@ -22,7 +22,13 @@ const AddAnimalForm:FC<AddAnimalFormProps> = ({ onClose, animalSpecies, closeBut
     <div className={styles.background}>
       <div className={styles.container}>
         <div className={styles.close}>
-          <button onClick={() => closeButton()} className={styles.closeBtn}>X</button>
+          <button
+            onClick={() => closeButton()}
+            className={styles.closeBtn}
+          >
+            X
+
+          </button>
         </div>
         <h2 className={styles.head}>Add Animal</h2>
         <div className={styles.wrapper}>
@@ -57,7 +63,11 @@ const AddAnimalForm:FC<AddAnimalFormProps> = ({ onClose, animalSpecies, closeBut
               onChange={(e) => setAnimalSpecie(e.target.value)}
             />
           </label>
-          <select className={styles.select} defaultValue="default" onChange={(e) => setAnimalSpecie(e.target.value)}>
+          <select
+            className={styles.select}
+            defaultValue="default"
+            onChange={(e) => setAnimalSpecie(e.target.value)}
+          >
             <option value="default" hidden>Species</option>
             {animalSpecies.map((item) => (
               <option key={item}>{item}</option>

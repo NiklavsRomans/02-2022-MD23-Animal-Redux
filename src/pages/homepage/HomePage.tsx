@@ -22,7 +22,6 @@ const HomePage = () => {
 
   useEffect(() => {
     localStorage.setItem('animals', JSON.stringify(animals));
-    localStorage.clear();
   }, [animals]);
 
   return (

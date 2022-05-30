@@ -32,9 +32,10 @@ const AddAnimalForm:FC<AddAnimalFormProps> = ({ onClose, animalSpecies, closeBut
         </div>
         <h2 className={styles.head}>Add Animal</h2>
         <div className={styles.wrapper}>
-          <label>
+          <label htmlFor="name">
             Name
             <input
+              id="name"
               className={styles.input}
               value={animalName}
               onChange={(e) => setAnimalName(e.target.value)}
@@ -43,9 +44,10 @@ const AddAnimalForm:FC<AddAnimalFormProps> = ({ onClose, animalSpecies, closeBut
             />
 
           </label>
-          <label>
+          <label htmlFor="img">
             Image Src
             <input
+              id="img"
               className={styles.input}
               type="text"
               placeholder="Animal image link"
@@ -53,9 +55,10 @@ const AddAnimalForm:FC<AddAnimalFormProps> = ({ onClose, animalSpecies, closeBut
               onChange={(e) => setAnimalImg(e.target.value)}
             />
           </label>
-          <label>
+          <label htmlFor="specie">
             Specie
             <input
+              id="specie"
               className={styles.input}
               type="text"
               placeholder="Specie"

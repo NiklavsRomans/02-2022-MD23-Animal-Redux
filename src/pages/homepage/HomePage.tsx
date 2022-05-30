@@ -14,11 +14,11 @@ const HomePage = () => {
     if (activeFilter === 'All') {
       return animals;
     }
-    return animals.filter((item) => item.specie === activeFilter);
+    return animals.filter((animal) => animal.specie === activeFilter);
   };
 
   const uniqueAnimalSpecies = animals.map((item) => item.specie)
-    .filter((item, index, arr) => index === arr.indexOf(item));
+    .filter((specie, index, arr) => index === arr.indexOf(specie));
 
   useEffect(() => {
     localStorage.setItem('animals', JSON.stringify(animals));
